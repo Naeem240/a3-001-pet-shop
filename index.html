@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shot</title>
+    <link rel="shortcut icon" href="images/logo-header.png" type="image/x-icon">
+
+    <!-- Google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- Custom CSS -->
+    <style type="text/tailwindcss">
+        @theme {
+        --color-color-1: #FFDC26;
+        --color-color-2: #FFF9F4;
+        }
+        body{
+            font-family: 'Sora', sans-serif;
+        }
+        h1{
+            font-family: 'ADLaM Display', serif !important;
+        }
+        /* .categories div{
+            background-color: #FFDC26;
+            text-align: center;
+            border-radius: 10px;
+            padding: 50px 65px;
+        }
+        .categories div img{
+            margin: auto;
+            background-color: white;
+            border-radius: 50%;
+            padding: 10px;
+        } */
+    </style>
+
+
+</head>
+
+<body class="bg-white rounded-full">
+    <!-- Header Section Start -->
+    <header class="bg-white rounded-full relative z-30">
+        <!-- Navbar Start -->
+        <nav class="bg-color-2">
+            <div class="navbar container mx-auto">
+                <div class="navbar-start flex items-center">
+                    <div class="avatar mr-2">
+                        <img src="images/logo-header.png" />
+                    </div>
+                    <button class="font-bold text-xl hidden lg:block">Browse<span
+                            class="text-color-1">4</span>Pets</button>
+                </div>
+                <div class="navbar-center hidden lg:block">
+                    <ul class="flex gap-x-16">
+                        <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end hidden lg:flex">
+                    <button class="btn btn-ghost btn-circle">
+                        <div class="indicator">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                            </svg>
+                        </div>
+                    </button>
+                    <button class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <div class="flex gap-x-3">
+                        <button class="px-4 py-1 border rounded-md border-yellow-400">Login</button>
+                        <button class="px-4 py-1 border rounded-md bg-yellow-400">Register</button>
+                    </div>
+                </div>
+                <div class="navbar-end lg:hidden">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+    </header>
+    <!-- Header Section End -->
+
+
+
+
+    <!-- Main Section Start -->
+    <main>
+
+        <!-- Banner Section Start -->
+        <section class="container mx-auto mt-4 lg:mt-20">
+            <div class="">
+                <div class="relative z-20 w-11/12 lg:w-1/3 ml-2">
+                    <h1 class=" text-3xl lg:text-4xl leading-normal">Pamper Your Pet, Because They Deserve the Best</h1>
+                    <p class="mt-4 opacity-70">
+                        Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and
+                        make tails wag with joy!
+                    </p>
+                    <button class="px-4 py-1 border rounded-md bg-yellow-400 mt-4">Find a Pet</button>
+                </div>
+                <div class="relative -top-28 lg:-top-96 z-10"><img src="images/cat-big.png" alt="" class=""></div>
+            </div>
+
+        </section>
+        <!-- Banner Section End -->
+
+        <!-- Catagories Start -->
+        <section class="container mx-auto -mt-26 lg:-mt-86">
+            <h2 class="text-2xl font-bold ml-2">Browse By Categories</h2><br>
+            <div class=" categories flex gap-3 flex-wrap mx-2">
+                <div class="card bg-color-1 flex-auto shadow-xl">
+                    <figure class="pt-10">
+                        <img src="images/dog-cartoon.png" alt="Dog" class="bg-white rounded-full p-5" />
+                    </figure>
+                    <div class="card-body items-center text-center w-32 mx-auto">
+                        <h2 class="card-title">Dogs!</h2>
+                        <p>3 Items</p>
+                    </div>
+                </div>
+                <div class="card bg-color-1 flex-auto shadow-xl">
+                    <figure class="pt-10">
+                        <img src="images/fish-cartoon.png" alt="fish-cartoon" class="bg-white rounded-full p-5" />
+                    </figure>
+                    <div class="card-body items-center text-center w-32 mx-auto">
+                        <h2 class="card-title">Fishes!</h2>
+                        <p>3 Items</p>
+                    </div>
+                </div>
+                <div class="card bg-color-1 flex-auto shadow-xl">
+                    <figure class="pt-10">
+                        <img src="images/cat-cartoon.png" alt="cat" class="bg-white rounded-full p-5" />
+                    </figure>
+                    <div class="card-body items-center text-center w-32 mx-auto">
+                        <h2 class="card-title">Cats!</h2>
+                        <p>3 Items</p>
+                    </div>
+                </div>
+                <div class="card bg-color-1 flex-auto shadow-xl">
+                    <figure class="pt-10">
+                        <img src="images/bird-cartoon.png" alt="Birds" class="bg-white rounded-full p-5" />
+                    </figure>
+                    <div class="card-body items-center text-center w-32 mx-auto">
+                        <h2 class="card-title">Birds!</h2>
+                        <p>3 Items</p>
+                    </div>
+                </div>
+                <div class="card bg-color-1 flex-auto shadow-xl">
+                    <figure class="pt-10">
+                        <img src="images/mouse-cartoon.png" alt="mouse" class="bg-white rounded-full p-5" />
+                    </figure>
+                    <div class="card-body items-center text-center w-32 mx-auto">
+                        <h2 class="card-title">Pets!</h2>
+                        <p>3 Items</p>
+                    </div>
+                </div>
+                <div class="card bg-color-1 flex-auto shadow-xl">
+                    <figure class="pt-10">
+                        <img src="images/rabbit-cartoon.png" alt="rabbit" class="bg-white rounded-full p-5" />
+                    </figure>
+                    <div class="card-body items-center text-center w-32 mx-auto">
+                        <h2 class="card-title">Rabbits!</h2>
+                        <p>3 Items</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Catagories End -->
+
+
+        <!-- Trending Start -->
+
+            <section>
+                <div class="container mx-auto py-10">
+
+                </div>
+            </section>
+
+
+
+        <!-- Trending End -->
+
+        
+
+    </main>
+    <!-- Main Section End -->
+
+
+
+
+
+    <!-- Footer Section Start -->
+    <footer>
+
+    </footer>
+    <!-- Footer Section End -->
+</body>
+
+</html>
