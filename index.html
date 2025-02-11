@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +16,6 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-
 
     <!-- Custom CSS -->
     <style type="text/tailwindcss">
@@ -107,7 +105,12 @@
                         Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and
                         make tails wag with joy!
                     </p>
-                    <button class="px-4 py-1 border rounded-md bg-yellow-400 mt-4">Find a Pet</button>
+                    <button class="px-4 py-1 border animate-bounce rounded-md bg-yellow-400 mt-6 relative z-10">Find a
+                        Pet</button>
+                    <span class="relative flex size-10">
+                        <span
+                            class="absolute -top-11 -right-10 inline-flex h-full w-full animate-ping rounded-full bg-yellow-400 opacity-100"></span>
+                    </span>
                 </div>
                 <div class="relative -top-28 lg:-top-96 z-10"><img src="images/cat-big.png" alt="" class=""></div>
             </div>
@@ -317,6 +320,62 @@
         </section>
         <!-- Trending End -->
 
+        <!-- Popular Start -->
+        <section class="container mx-auto my-8">
+            <h1 class="text-2xl ml-3 mb-4">Popular Pet Products</h1>
+            <div class="grid grid-cols-2 gap-y-4 lg:grid-cols-4">
+                <div class="bg-orange-100 lg:p-4 mx-2 card bg-base-100 shadow-xl h-65 p-2 lg:h-auto">
+                    <figure class="">
+                        <img src="images/pet-product-1.jpg" alt="Shoes" />
+                    </figure>
+                    <div class="lg:card-body mt-2">
+                        <h2 class="card-title">Dog Treats!</h2>
+                        <p>Your Dog's Delight, Every Bite</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-warning mt-2">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-orange-100 p-2 h-65 lg:h-auto lg:p-4 mx-2 card bg-base-100 shadow-xl">
+                    <figure class="">
+                        <img src="images/pet-product-2.jpg" alt="Shoes" />
+                    </figure>
+                    <div class="lg:card-body mt-2">
+                        <h2 class="card-title">Trimmers!</h2>
+                        <p>Where style meets precision</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-warning mt-2">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-orange-100 p-2 h-65 lg:h-auto lg:p-4 mx-2 card bg-base-100 shadow-xl">
+                    <figure class="">
+                        <img src="images/pet-product-3.jpg" alt="Shoes" />
+                    </figure>
+                    <div class="lg:card-body mt-2">
+                        <h2 class="card-title">Canine Medi!</h2>
+                        <p>Just can't escape the pup.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-warning mt-2">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-orange-100 p-2 h-65 lg:h-auto lg:p-4 mx-2 card bg-base-100 shadow-xl">
+                    <figure class="">
+                        <img src="images/pet-product-4.jpg" alt="Shoes" />
+                    </figure>
+                    <div class="lg:card-body mt-2">
+                        <h2 class="card-title">Dog Leash!</h2>
+                        <p>Durable Impact Dog Leash</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-warning mt-2">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Popular End -->
+
         <!-- Pricing Start -->
         <section class="container mx-auto py-8 lg:mt-8">
             <h2 class="text-2xl font-bold ml-2 mb-2">Everyday low Price</h2>
@@ -346,16 +405,18 @@
         <!-- Pricing End -->
 
         <!-- Pawsome News Start -->
-         <section class="container mx-auto relative top-60 -mt-50 rounded-lg">
+        <section class="container mx-auto relative top-70 lg:top-60 -mt-60 lg:-mt-50 rounded-lg">
             <div class="mx-2 text-center lg:text-left rounded-lg bg-pink-50 lg:flex gap-x-16 lg:pl-16 py-8">
                 <div class=""><img src="images/cute-pet-mid.png" alt="" class=" mx-auto"></div>
                 <div class="mt-4">
                     <h1 class="text-2xl my-4">Get Pawsome News</h1>
                     <h4 class="my-4">Exclusive Training tips, ticks, product deals and more</h4><br>
-                    <form action=""><input class="bg-white pl-4 pr-8 lg:pr-16 py-3 rounded-lg" type="text" name="" id="" placeholder="Enter Email..."><br><br><input class="btn btn-warning" type="submit" value="Subscribe"></form>
+                    <form action=""><input class="bg-white pl-4 pr-8 lg:pr-16 py-3 rounded-lg" type="text" name="" id=""
+                            placeholder="Enter Email..."><br><br><input class="btn btn-warning" type="submit"
+                            value="Subscribe"></form>
                 </div>
-            </div>            
-         </section>
+            </div>
+        </section>
         <!-- Pawsome News End -->
     </main>
     <!-- Main Section End -->
@@ -366,10 +427,10 @@
             <div class="lg:w-1/3">
                 <div class="flex items-center gap-x-2">
                     <div><img src="images/logo-footer.png" alt=""></div>
-                    <h3 class="font-bold text-xl">Browse<span
-                            class="text-yellow-700">4</span>Pets</h3>
+                    <h3 class="font-bold text-xl">Browse<span class="text-yellow-700">4</span>Pets</h3>
                 </div>
-                <p class="opacity-80 my-2 lg:mt-4">Discover a world of treats, toys and essentials handpicked for your furry friends</p>
+                <p class="opacity-80 my-2 lg:mt-4">Discover a world of treats, toys and essentials handpicked for your
+                    furry friends</p>
             </div>
             <div class="mt-4 lg:mt-0">
                 <ul class="list-none">
@@ -387,9 +448,8 @@
                     <div><img src="images/ytube-icon.png" alt=""></div>
                 </div>
             </div>
-        </div>                
+        </div>
     </footer>
     <!-- Footer Section End -->
 </body>
-
 </html>
